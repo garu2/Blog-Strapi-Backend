@@ -4,12 +4,12 @@ module.exports = ({ env }) => ({
     default: {
       connector: 'mongoose',
       settings: {
-        host: env('DATABASE_HOST', 'clusterstrapy.wtclfyw.mongodb.net'),
-        srv: env.bool('DATABASE_SRV', true),
-        port: env.int('DATABASE_PORT', 27017),
-        database: env('DATABASE_NAME', 'blogPage'),
-        username: env('DATABASE_USERNAME', 'blackcode01'),
-        password: env('DATABASE_PASSWORD', 'black07ak01'),
+        host: env('DATABASE_HOST'),
+        srv: env.bool('DATABASE_SRV'),
+        port: env.int('DATABASE_PORT'),
+        database: env('DATABASE_NAME'),
+        username: env('DATABASE_USERNAME'),
+        password: env('DATABASE_PASSWORD'),
       },
       options: {
         authenticationDatabase: env('AUTHENTICATION_DATABASE', 'admin'),
